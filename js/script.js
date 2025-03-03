@@ -20,3 +20,8 @@ var swiper = new Swiper(".slide-depoiments", {
         }
     }
 });
+
+AOS.init({
+    duration: 1200,
+    disable: "mobile"
+});

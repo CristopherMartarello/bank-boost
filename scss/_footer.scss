@@ -36,6 +36,14 @@ footer {
         display: flex;
         align-items: center;
         gap: 3.2rem;
+        li {
+          a {
+            transition: opacity 0.3s ease;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
       }
     }
   }
@@ -73,6 +81,10 @@ footer {
               color: var(--WHITE);
               font-size: 1.4rem;
               opacity: 0.67;
+              transition: opacity 0.3s ease;
+              &:hover {
+                opacity: 1;
+              }
             }
           }
         }
@@ -90,6 +102,11 @@ footer {
         background: rgba(255, 255, 255, 0.04);
         padding: 2.6rem 1.5rem 2.6rem 2.4rem;
         gap: 1.6rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
 
         &:not(:last-child) {
           margin-bottom: 2.4rem;
