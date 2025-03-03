@@ -449,6 +449,189 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .container {
+      gap: 6rem;
+    }
+
+    .left {
+      .mockup {
+        margin-bottom: 8.5rem;
+      }
+    }
+
+    .right {
+      max-width: 70rem;
+
+      .box {
+        margin-top: 9.8rem;
+        padding-left: 4rem;
+        height: 35rem;
+
+        .text {
+          h5 {
+            font-size: 2.4rem;
+          }
+
+          p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .right {
+      max-width: 100%;
+
+      .box {
+        .card {
+          left: 10px;
+          max-width: 290px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .right {
+      h2 {
+        text-align: center;
+        max-width: 100%;
+        text-wrap: balance;
+      }
+
+      .list {
+        max-width: 100%;
+      }
+
+      .box {
+        margin-top: 6rem;
+        padding: 4rem;
+        flex-direction: column;
+        align-items: center;
+        height: 45rem;
+        gap: 4rem;
+
+        .text {
+          max-width: 100%;
+          text-align: center;
+
+          ul {
+            justify-content: center;
+          }
+        }
+
+        .card {
+          max-width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 4rem;
+      margin-top: 4rem;
+
+      .mockup {
+        margin-bottom: 0;
+      }
+
+      .description {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 4rem;
+
+    .container {
+      gap: 9rem;
+    }
+
+    .right {
+      h2 {
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+      }
+
+      .list {
+        li {
+          padding-top: 3.2rem;
+          align-items: flex-start;
+
+          .text {
+            flex: 1;
+
+            h4 {
+              font-size: 1.8rem;
+              text-wrap: balance;
+            }
+
+            p {
+              font-size: 1.4rem;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+
+      .btn {
+        display: block;
+        max-width: 18.5rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .box {
+        margin-top: 4rem;
+        padding: 4.8rem 2.8rem 0 2.8rem;
+
+        .text {
+          h3 {
+            font-size: 2.8rem;
+          }
+
+          h5 {
+            font-size: 2rem;
+            line-height: 150%;
+          }
+
+          p {
+            font-size: 1.6rem;
+            text-wrap: balance;
+            margin-bottom: 3.2rem;
+          }
+
+          ul {
+            li {
+              button {
+                padding: 1.4rem 0rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-depoiments {
@@ -528,6 +711,63 @@
       color: var(--GRAY-600);
       font-size: 1.8rem;
       line-height: 150%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (max-width: 991px) {
+    .title {
+      margin-bottom: 3rem;
+      justify-content: center;
+      text-align: center;
+
+      .swiper-pagination {
+        display: none;
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .slide-depoiments {
+      padding: 0 1.5rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 5.6rem;
+    padding-top: 4rem;
+    background-color: #ffffff;
+    margin-top: -7.6rem;
+    position: relative;
+    z-index: 2;
+
+    .title {
+      h2 {
+        font-size: 2.4rem;
+        max-width: 25.5rem;
+        strong {
+          font-size: 2.4rem;
+          text-wrap: balance;
+        }
+      }
+    }
+
+    .card-depoiment {
+      padding: 3.2rem 2rem;
+
+      .user {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
     }
   }
 }
